@@ -1,0 +1,34 @@
+# Local / env
+.env
+.env.*
+!.env.example
+backend/.venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local docker overrides (host port conflicts, etc.)
+docker-compose.override.yml
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Frontend build noise
+frontend/dist/
+frontend/node_modules/
+node_modules/
+*.log
+
+# Loom script stays private (see _private/loom/)
+LOOM_SCRIPT.md
+
+# Local notes / Loom / repro — not for GitHub
+_private/
